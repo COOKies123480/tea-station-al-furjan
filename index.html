@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tea Station | Classical Tearoom & Bite & Go at Al Furjan Metro Station, Dubai</title>
+  <meta name="description" content="Tea Station - Bite & Go at Al Furjan Metro Station, Dubai. Authentic Karak, Saffron Milk Tea, gourmet burgers, flippable book menu, and rapid commuter pickup.">
+
+  <!-- Google Fonts: Classical Blackletter, Serif, and Clean UI fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=UnifrakturMaguntia&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons for aesthetics -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="vintage-theme">
+  <!-- Atmospheric Canvas for Beyond the Boundary ambient particles & gentle steam -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Top Announcement Bar -->
+  <header class="top-announcement">
+    <div class="container announcement-inner">
+      <div class="announcement-left">
+        <span class="status-indicator"><span class="pulse-dot"></span> Open Daily &bull; 6:00 AM &ndash; 12:00 Midnight</span>
+        <span class="divider-slash">/</span>
+        <span class="station-tag"><i class="fa-solid fa-train-subway"></i> Al Furjan Metro Station, Concourse Level</span>
+      </div>
+      <div class="announcement-right">
+        <a href="#quick-order" class="top-cta"><i class="fa-solid fa-bolt"></i> Commuter Quick-Pickup</a>
+        <a href="https://wa.me/971581550440?text=Hello%20Tea%20Station%20Al%20Furjan!%20I%20would%20like%20to%20order:" target="_blank" class="top-social" title="WhatsApp Order" id="top-whatsapp-link">
+          <i class="fa-brands fa-whatsapp"></i> <span>Order on WhatsApp (+971 58 155 0440)</span>
+        </a>
+        <a href="https://www.instagram.com/tea_station_al_furjan/" target="_blank" class="top-social" title="Follow on Instagram" id="top-instagram-link">
+          <i class="fa-brands fa-instagram"></i> <span>@tea_station_al_furjan</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Navigation Bar -->
+  <nav class="navbar" id="main-nav">
+    <div class="container nav-container">
+      <a href="#" class="brand-link">
+        <div class="brand-logo-wrap">
+          <img src="images/logo_round_transparent.png" alt="Tea Station Emblem" class="brand-emblem" onerror="this.src='images/logo_circle_exact.png'">
+        </div>
+        <div class="brand-titles">
+          <span class="brand-name-blackletter">Tea Station</span>
+          <span class="brand-subtitle">BITE &amp; GO &bull; AL FURJAN METRO</span>
+        </div>
+      </a>
+
+      <div class="nav-links" id="nav-menu">
+        <a href="#atmosphere" class="nav-item">The Tearoom</a>
+        <a href="#flipbook-section" class="nav-item highlight-nav"><i class="fa-solid fa-book-open"></i> Flippable Menu</a>
+        <a href="#digital-menu" class="nav-item">Menu Explorer</a>
+        <a href="#location" class="nav-item">Find Us</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/971581550440" target="_blank" class="nav-whatsapp-btn" id="nav-whatsapp-btn">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Order Now</span>
+        </a>
+
+        <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Beyond the Boundary Kissaten Aesthetic -->
+  <section class="hero-section" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-radial-glow"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="badge-icon"><i class="fa-solid fa-mug-hot"></i></span>
+        <span>A Classical Nostalgic Haven &bull; Route 2020 Dubai</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="blackletter-title">Tea Station</span>
+        <span class="hero-title-sub">Bite &amp; Go</span>
+      </h1>
+
+      <p class="hero-description">
+        Inspired by the quiet warmth of classical kissaten tearooms, where antique dark woods, warm amber light, and the fragrant steam of slow-brewed <em>Karak &amp; Saffron Tea</em> welcome every traveler inside <strong>Al Furjan Metro Station</strong>.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#flipbook-section" class="btn btn-primary">
+          <i class="fa-solid fa-book-open-reader"></i>
+          <span>Open Flippable Menu Book</span>
+        </a>
+        <a href="https://wa.me/971581550440?text=Hello%20Tea%20Station%20Al%20Furjan!%20I%20am%20at%20the%20metro%20station%20and%20would%20like%20to%20order:" target="_blank" class="btn btn-secondary" id="hero-whatsapp-btn">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Order Ahead on WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- Quick Highlights Bar -->
+      <div class="hero-features-bar">
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+          <div class="feature-text">
+            <strong>Fresh Karak Tea</strong>
+            <span>From AED 1.50</span>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa-solid fa-burger"></i></div>
+          <div class="feature-text">
+            <strong>Zinker &amp; Mathafi Burgers</strong>
+            <span>Freshly Grilled</span>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa-solid fa-glass-water-droplet"></i></div>
+          <div class="feature-text">
+            <strong>Pure Juices &amp; Mojitos</strong>
+            <span>Freshly Squeezed</span>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa-solid fa-person-running"></i></div>
+          <div class="feature-text">
+            <strong>Metro Express Ready</strong>
+            <span>0-Minute Wait Pickup</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decorative Tea Cup with Rising Steam -->
+    <div class="hero-steam-container" aria-hidden="true">
+      <div class="steam-cup-glow"></div>
+      <div class="steam-particle s1"></div>
+      <div class="steam-particle s2"></div>
+      <div class="steam-particle s3"></div>
+      <div class="steam-particle s4"></div>
+    </div>
+  </section>
+
+  <!-- The Kissaten Atmosphere Section (Beyond the Boundary inspired) -->
+  <section class="atmosphere-section" id="atmosphere">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-header-accent"><i class="fa-regular fa-compass"></i> A Warm Respite On Your Journey</span>
+        <h2 class="section-title">The Nostalgic Tearoom Experience</h2>
+        <div class="ornament-divider">
+          <span>&loz;</span>
+          <div class="divider-line"></div>
+          <span class="ornament-center">&diams;</span>
+          <div class="divider-line"></div>
+          <span>&loz;</span>
+        </div>
+        <p class="section-subtitle">
+          Much like the vintage, comforting cafes tucked away in beloved stories, Tea Station brings a tranquil pause into Dubai's lively commute. Dark polished tones, warm orange lanterns, and freshly brewed comfort.
+        </p>
+      </div>
+
+      <div class="atmosphere-grid">
+        <div class="atmosphere-card">
+          <div class="card-icon-box">
+            <i class="fa-solid fa-mortar-pestle"></i>
+          </div>
+          <h3>The Authentic Brew Ritual</h3>
+          <p>Cardamom-infused Karak, slow-cooked fresh cow milk tea, and real saffron threads steeped to perfection. A deep, soulful aroma greeting you right outside the metro gates.</p>
+        </div>
+
+        <div class="atmosphere-card featured-glow">
+          <div class="card-icon-box">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <h3>Al Furjan Commuter Sanctuary</h3>
+          <p>Located on the Concourse Level inside Al Furjan Station, serving hot comfort food, signature club sandwiches, Filipino treats, and Indian specialties all day and night.</p>
+        </div>
+
+        <div class="atmosphere-card">
+          <div class="card-icon-box">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+          </div>
+          <h3>Order While On The Train</h3>
+          <p>Text us your order on WhatsApp while you're one or two stops away. Step off the train at Al Furjan, pick up your piping hot meal, and continue your day without wasting a second.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- THE FLIPPABLE MENU BOOK (Realistic 3D Book)    -->
+  <!-- ============================================== -->
+  <section class="flipbook-section" id="flipbook-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-header-accent"><i class="fa-solid fa-feather-pointed"></i> Bound In Antique Craftsmanship</span>
+        <h2 class="section-title">Our Flippable Menu Book</h2>
+        <div class="ornament-divider">
+          <span>&loz;</span>
+          <div class="divider-line"></div>
+          <span class="ornament-center">&diams;</span>
+          <div class="divider-line"></div>
+          <span>&loz;</span>
+        </div>
+        <p class="section-subtitle">
+          Flip through the pages of our official menu as if holding a vintage leather-bound volume. Tap page corners or use the controls below to browse all 8 authentic pages.
+        </p>
+      </div>
+
+      <!-- Book Category Bookmark Jump Tabs -->
+      <div class="book-bookmarks">
+        <button class="bookmark-btn active" data-jump="0"><i class="fa-solid fa-bookmark"></i> Cover</button>
+        <button class="bookmark-btn" data-jump="1"><i class="fa-solid fa-mug-saucer"></i> Teas &amp; Combos</button>
+        <button class="bookmark-btn" data-jump="2"><i class="fa-solid fa-burger"></i> Burgers &amp; Clubs</button>
+        <button class="bookmark-btn" data-jump="3"><i class="fa-solid fa-bread-slice"></i> Parathas &amp; Juices</button>
+        <button class="bookmark-btn" data-jump="4"><i class="fa-solid fa-martini-glass-citrus"></i> Mojitos &amp; Shakes</button>
+      </div>
+
+      <!-- Flippable Book Container -->
+      <div class="book-stage-wrapper">
+        <div class="book-container" id="book-container">
+          <!-- The 3D Book -->
+          <div class="book" id="realistic-book">
+            <!-- Front Leather Cover -->
+            <div class="book-cover front-cover" id="cover-page">
+              <div class="cover-filigree">
+                <div class="filigree-corner top-left"></div>
+                <div class="filigree-corner top-right"></div>
+                <div class="filigree-corner bottom-left"></div>
+                <div class="filigree-corner bottom-right"></div>
+                <div class="cover-inner-border">
+                  <div class="cover-emblem-wrap">
+                    <img src="images/logo_round_transparent.png" alt="Tea Station Emblem" class="cover-logo-img">
+                  </div>
+                  <h3 class="cover-main-title">Tea Station</h3>
+                  <div class="cover-sub">BITE &amp; GO</div>
+                  <div class="cover-divider">&mdash;&bull;&mdash;</div>
+                  <p class="cover-station-text">AL FURJAN METRO STATION</p>
+                  <span class="cover-callout">DUBAI &bull; ROUTE 2020</span>
+                  <div class="tap-hint">
+                    <i class="fa-solid fa-hand-pointer animate-tap"></i>
+                    <span>Click or Drag to Turn Page</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Page Spread 1 (Pages 1 & 2) -->
+            <div class="book-spread" id="spread-1" data-spread="1">
+              <div class="book-page page-left" data-page="1">
+                <div class="page-number">Page 1</div>
+                <div class="page-corner-hint top-corner" title="Flip page"></div>
+                <img src="images/page_1.jpg" alt="Menu Cover & Signature Teas" class="menu-page-img" loading="lazy">
+                <button class="page-zoom-trigger" data-img="images/page_1.jpg" title="View High-Res Page 1"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+              </div>
+              <div class="book-page page-right" data-page="2">
+                <div class="page-number">Page 2</div>
+                <div class="page-corner-hint top-corner" title="Flip page"></div>
+                <img src="images/page_2.jpg" alt="Tea Special, Coffee, Filipino & Indian Combos, Wraps" class="menu-page-img" loading="lazy">
+                <button class="page-zoom-trigger" data-img="images/page_2.jpg" title="View High-Res Page 2"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+              </div>
+            </div>
+
+            <!-- Page Spread 2 (Pages 3 & 4) -->
+            <div class="book-spread" id="spread-2" data-spread="2">
+              <div class="book-page page-left" data-page="3">
+                <div class="page-number">Page 3</div>
+                <div class="page-corner-hint top-corner" title="Flip page"></div>
+                <img src="images/page_3.jpg" alt="Fresh Burger Sandwiches" class="menu-page-img" loading="lazy">
+                <button class="page-zoom-trigger" data-img="images/page_3.jpg" title="View High-Res Page 3"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+              </div>
+              <div class="book-page page-right" data-page="4">
+                <div class="page-number">Page 4</div>
+                <div class="page-corner-hint top-corner" title="Flip page"></div>
+                <img src="images/page_4.jpg" alt="Triangle Club & Shawarma" class="menu-page-img" loading="lazy">
+                <button class="page-zoom-trigger" data-img="images/page_4.jpg" title="View High-Res Page 4"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+              </div>
+            </div>
+
+            <!-- Page Spread 3 (Pages 5 & 6) -->
+            <div class="book-spread" id="spread-3" data-spread="3">
+              <div class="book-page page-left" data-page="5">
+                <div class="page-number">Page 5</div>
+                <div class="page-corner-hint top-corner" title="Flip page"></div>
+                <img src="images/page_5.jpg" alt="Combo Sandwiches & Paratha Sandwiches" class="menu-page-img" loading="lazy">
+                <button class="page-zoom-trigger" data-img="images/page_5.jpg" title="View High-Res Page 5"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+              </div>
+              <div class="book-page page-right" data-page="6">
+                <div class="page-number">Page 6</div>
+                <div class="page-corner-hint top-corner" title="Flip page"></div>
+                <img src="images/page_6.jpg" alt="Fresh Juices & Lassi" class="menu-page-img" loading="lazy">
+                <button class="page-zoom-trigger" data-img="images/page_6.jpg" title="View High-Res Page 6"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+              </div>
+            </div>
+
+            <!-- Page Spread 4 (Pages 7 & 8) -->
+            <div class="book-spread" id="spread-4" data-spread="4">
+              <div class="book-page page-left" data-page="7">
+                <div class="page-number">Page 7</div>
+                <div class="page-corner-hint top-corner" title="Flip page"></div>
+                <img src="images/page_7.jpg" alt="Special Juices & Mojitos" class="menu-page-img" loading="lazy">
+                <button class="page-zoom-trigger" data-img="images/page_7.jpg" title="View High-Res Page 7"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+              </div>
+              <div class="book-page page-right" data-page="8">
+                <div class="page-number">Page 8</div>
+                <div class="page-corner-hint top-corner" title="Flip page"></div>
+                <img src="images/page_8.jpg" alt="Milkshakes & Fresh Fruit Mix" class="menu-page-img" loading="lazy">
+                <button class="page-zoom-trigger" data-img="images/page_8.jpg" title="View High-Res Page 8"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+              </div>
+            </div>
+
+            <!-- Back Leather Cover -->
+            <div class="book-cover back-cover" id="back-cover">
+              <div class="cover-filigree">
+                <div class="filigree-corner top-left"></div>
+                <div class="filigree-corner top-right"></div>
+                <div class="filigree-corner bottom-left"></div>
+                <div class="filigree-corner bottom-right"></div>
+                <div class="cover-inner-border">
+                  <div class="cover-emblem-wrap">
+                    <img src="images/logo_round_transparent.png" alt="Tea Station Emblem" class="cover-logo-img">
+                  </div>
+                  <h3 class="cover-main-title">Tea Station</h3>
+                  <p class="back-cover-station">Al Furjan Metro Station, Dubai</p>
+                  <div class="cover-divider">&mdash;&bull;&mdash;</div>
+                  <div class="back-contact-box">
+                    <p><i class="fa-brands fa-whatsapp"></i> WhatsApp / Orders: <strong>+971 58 155 0440</strong></p>
+                    <p><i class="fa-solid fa-phone"></i> Direct Line: <strong>+971 58 155 0440</strong></p>
+                    <p><i class="fa-brands fa-instagram"></i> Instagram: <strong>@tea_station_al_furjan</strong></p>
+                    <p><i class="fa-solid fa-train"></i> Route 2020 Concourse Level</p>
+                  </div>
+                  <button class="btn btn-primary re-flip-btn" id="reflip-to-front">
+                    <i class="fa-solid fa-rotate-left"></i> Turn Back to Cover
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Realistic Book Controls Bar -->
+      <div class="book-controls">
+        <button class="book-nav-btn prev-btn" id="book-prev" aria-label="Previous Page">
+          <i class="fa-solid fa-chevron-left"></i> <span>Previous Page</span>
+        </button>
+
+        <div class="book-status-badge">
+          <span id="current-spread-label">Cover Page</span>
+          <span class="page-indicator-dot active"></span>
+          <span class="page-indicator-dot"></span>
+          <span class="page-indicator-dot"></span>
+          <span class="page-indicator-dot"></span>
+          <span class="page-indicator-dot"></span>
+        </div>
+
+        <button class="book-nav-btn next-btn" id="book-next" aria-label="Next Page">
+          <span>Next Page</span> <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="book-toolbar-options text-center">
+        <button id="toggle-sound-effect" class="toolbar-pill">
+          <i class="fa-solid fa-bell"></i> Page Turn Sound: <span id="sound-state-label">On</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- DIGITAL MENU EXPLORER (Quick Search & Order)   -->
+  <!-- ============================================== -->
+  <section class="digital-menu-section" id="digital-menu">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-header-accent"><i class="fa-solid fa-utensils"></i> Direct Order Selection</span>
+        <h2 class="section-title">Menu Explorer &amp; Quick Cart</h2>
+        <div class="ornament-divider">
+          <span>&loz;</span>
+          <div class="divider-line"></div>
+          <span class="ornament-center">&diams;</span>
+          <div class="divider-line"></div>
+          <span>&loz;</span>
+        </div>
+        <p class="section-subtitle">
+          Searching for your favorite bite? Filter through our freshly prepared teas, signature sandwiches, fresh juices, and combos. Tap to add directly to your WhatsApp order!
+        </p>
+      </div>
+
+      <!-- Search & Category Filters -->
+      <div class="menu-filter-controls">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="menu-search-input" placeholder="Search Karak, Zinker, Saffron, Mojito, Falooda...">
+          <button id="clear-search-btn" style="display:none;"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="category-tabs" id="category-tabs">
+          <button class="cat-tab active" data-category="all">All Items</button>
+          <button class="cat-tab" data-category="teas">Teas &amp; Coffee</button>
+          <button class="cat-tab" data-category="burgers">Burgers</button>
+          <button class="cat-tab" data-category="clubs">Clubs &amp; Wraps</button>
+          <button class="cat-tab" data-category="combos">Combos &amp; Parathas</button>
+          <button class="cat-tab" data-category="juices">Fresh Juices &amp; Mojitos</button>
+          <button class="cat-tab" data-category="shakes">Milkshakes &amp; Sweets</button>
+        </div>
+      </div>
+
+      <!-- Menu Items Grid -->
+      <div class="menu-items-grid" id="menu-grid">
+        <!-- Rendered dynamically by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- LOCATION & CONTACT GUIDE                       -->
+  <!-- ============================================== -->
+  <section class="location-section" id="location">
+    <div class="container">
+      <div class="location-card-wrapper">
+        <div class="location-details">
+          <div class="location-station-badge">
+            <i class="fa-solid fa-location-dot"></i> Al Furjan Metro Station &bull; Dubai
+          </div>
+          <h2 class="location-title">Inside Al Furjan Metro Station</h2>
+          <p class="location-address">
+            <strong>Concourse Level</strong> (Easily accessible right by the station turnstiles), Al Furjan Metro Station, Dubai, United Arab Emirates.
+          </p>
+
+          <div class="metro-guidance-box">
+            <h4><i class="fa-solid fa-mug-hot"></i> Commuter Quick-Guide:</h4>
+            <ul>
+              <li><strong>Al Furjan &amp; Discovery Gardens:</strong> Perfect pitstop for hot Karak, breakfast parathas, and gourmet burgers on your daily journey.</li>
+              <li><strong>Zero-Wait Pickup:</strong> Text your order on WhatsApp to <strong>+971 58 155 0440</strong> while on the train, and your food will be packed and steaming hot when you step off!</li>
+              <li><strong>Neighborhood Delivery:</strong> We deliver hot tea flasks, parathas, and meals straight to homes and offices in the Al Furjan community.</li>
+            </ul>
+          </div>
+
+          <div class="contact-details-grid">
+            <div class="contact-col">
+              <span class="col-label"><i class="fa-solid fa-phone"></i> Direct Telephone</span>
+              <a href="tel:+971581550440" class="contact-value">+971 58 155 0440</a>
+            </div>
+            <div class="contact-col">
+              <span class="col-label"><i class="fa-brands fa-whatsapp"></i> WhatsApp Orders</span>
+              <a href="https://wa.me/971581550440" target="_blank" class="contact-value">+971 58 155 0440</a>
+            </div>
+            <div class="contact-col">
+              <span class="col-label"><i class="fa-brands fa-instagram"></i> Instagram</span>
+              <a href="https://www.instagram.com/tea_station_al_furjan/" target="_blank" class="contact-value" id="loc-instagram-link">@tea_station_al_furjan</a>
+            </div>
+            <div class="contact-col">
+              <span class="col-label"><i class="fa-regular fa-clock"></i> Working Hours</span>
+              <span class="contact-value">6:00 AM &ndash; 12:00 Midnight (Daily)</span>
+            </div>
+          </div>
+
+          <div class="location-actions">
+            <a href="https://wa.me/971581550440?text=Hello%20Tea%20Station%20Al%20Furjan!%20I%20would%20like%20to%20place%20an%20order:" target="_blank" class="btn btn-primary" id="loc-whatsapp-btn">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp Order (+971 58 155 0440)
+            </a>
+            <a href="https://www.instagram.com/tea_station_al_furjan/" target="_blank" class="btn btn-instagram" id="loc-instagram-btn">
+              <i class="fa-brands fa-instagram"></i> @tea_station_al_furjan
+            </a>
+          </div>
+        </div>
+
+        <!-- Google Maps & Storefront Showcase Card -->
+        <div class="location-visual-card">
+          <div class="visual-card-inner">
+            <div class="google-maps-card-header">
+              <div class="gmaps-logo-badge">
+                <i class="fa-brands fa-google"></i>
+                <span>Google Maps Location</span>
+              </div>
+            </div>
+
+            <div class="storefront-preview-box">
+              <div class="storefront-icon-circle">
+                <img src="images/logo_round_transparent.png" alt="Tea Station" class="gmap-emblem">
+              </div>
+              <h3>Tea Station &bull; Bite &amp; Go</h3>
+              <p class="store-sub">Al Furjan Metro Station, Dubai</p>
+              <div class="storefront-pills">
+                <span class="pill"><i class="fa-solid fa-check"></i> Dine-in Counter</span>
+                <span class="pill"><i class="fa-solid fa-check"></i> Takeaway</span>
+                <span class="pill"><i class="fa-solid fa-check"></i> WhatsApp Pickup</span>
+              </div>
+            </div>
+
+            <div class="gmaps-action-bar">
+              <a href="https://www.google.com/maps/search/?api=1&query=Tea+Station+Al+Furjan+Dubai" target="_blank" class="btn btn-secondary w-100 gmaps-btn">
+                <i class="fa-solid fa-diamond-turn-right"></i>
+                <span>Open in Google Maps &amp; Get Directions</span>
+              </a>
+            </div>
+
+            <div class="service-notice" style="margin-top: 1rem;">
+              <i class="fa-solid fa-clock"></i>
+              <span>Open 7 Days a week &bull; 6:00 AM to 12:00 Midnight</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- FOOTER                                         -->
+  <!-- ============================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand-col">
+        <div class="footer-logo-wrap">
+          <img src="images/logo_round_transparent.png" alt="Tea Station" class="footer-logo">
+          <span class="brand-name-blackletter footer-title">Tea Station</span>
+        </div>
+        <p class="footer-tagline">Bite &amp; Go &bull; Classical Nostalgic Tearoom</p>
+        <p class="footer-address">Inside Al Furjan Metro Station, Concourse Level, Dubai, UAE.</p>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#atmosphere">The Tearoom</a></li>
+          <li><a href="#flipbook-section">Flippable Menu Book</a></li>
+          <li><a href="#digital-menu">Menu Explorer</a></li>
+          <li><a href="#location">Al Furjan Station Guide</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-order-col">
+        <h4>Order &amp; Connect</h4>
+        <p>Send your order directly via WhatsApp or call our station counter:</p>
+        <div class="footer-social-row">
+          <a href="https://wa.me/971581550440" target="_blank" class="footer-social-icon whatsapp-icon" title="Chat on WhatsApp" id="footer-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="https://www.instagram.com/tea_station_al_furjan/" target="_blank" class="footer-social-icon instagram-icon" title="Follow us on Instagram" id="footer-instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="tel:+971581550440" class="footer-social-icon phone-icon" title="Call Tea Station (+971 58 155 0440)">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </div>
+        <div class="hotline-text">
+          <span>WhatsApp &amp; Orders: <strong>+971 58 155 0440</strong></span>
+          <span>Instagram: <strong>@tea_station_al_furjan</strong></span>
+          <span>Location: <strong>Al Furjan Metro Station, Dubai</strong></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <div class="container bottom-bar-inner">
+        <p>&copy; <span id="current-year">2026</span> Tea Station &bull; Bite &amp; Go. All rights reserved. Al Furjan Metro Station, Dubai.</p>
+        <p class="aesthetic-credit">Classical aesthetic tearoom &bull; Beyond the Boundary kissaten atmosphere</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================== -->
+  <!-- FLOATING QUICK ACCESS WIDGETS                  -->
+  <!-- ============================================== -->
+  <div class="floating-social-widget">
+    <!-- WhatsApp Floating Action -->
+    <a href="https://wa.me/971581550440?text=Hello%20Tea%20Station%20Al%20Furjan!%20I%20would%20like%20to%20order:" target="_blank" class="floating-btn whatsapp-float" id="floating-whatsapp" title="Order directly on WhatsApp (+971 58 155 0440)">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="float-tooltip">WhatsApp: +971 58 155 0440</span>
+      <span class="live-dot"></span>
+    </a>
+
+    <!-- Instagram Floating Action -->
+    <a href="https://www.instagram.com/tea_station_al_furjan/" target="_blank" class="floating-btn instagram-float" id="floating-instagram" title="Visit our Instagram (@tea_station_al_furjan)">
+      <i class="fa-brands fa-instagram"></i>
+      <span class="float-tooltip">Instagram: @tea_station_al_furjan</span>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button class="floating-btn back-to-top" id="back-to-top" title="Back to top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <!-- Zoom Modal for Menu Pages -->
+  <div class="page-zoom-modal" id="page-zoom-modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modal-close-backdrop"></div>
+    <div class="modal-content-wrap">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close zoom modal"><i class="fa-solid fa-xmark"></i></button>
+      <img src="" alt="Menu Page Zoom" id="modal-zoom-img" class="modal-zoom-image">
+    </div>
+  </div>
+
+  <!-- Quick Cart / Order Floating Pill -->
+  <div class="floating-cart-bar" id="floating-cart-bar" style="display: none;">
+    <div class="cart-bar-inner">
+      <div class="cart-info">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span id="cart-item-count">0 items</span>
+        <span class="cart-dot">&bull;</span>
+        <strong id="cart-total-price">AED 0.00</strong>
+      </div>
+      <button class="btn btn-whatsapp-order btn-sm" id="btn-checkout-whatsapp">
+        <i class="fa-brands fa-whatsapp"></i> Send Order on WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
